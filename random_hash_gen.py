@@ -8,7 +8,7 @@ def random_hash(length=32):
     string_hash = ''.join(random.choices(string.ascii_letters + string.digits, k=length))
     return hashlib.md5(string_hash.encode()).hexdigest()
 
-for i in range(1, 1000 + 1):
+for i in range(1, 1001):
     hash_value = random_hash()
     print(f"Attempt {i}: {hash_value}")
 
